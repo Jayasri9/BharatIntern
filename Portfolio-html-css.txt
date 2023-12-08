@@ -1,0 +1,410 @@
+*******HTML*********
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>Jayasri</div>
+        <div>
+            <ul class="list">
+                <li onclick="display('sectionprofile')"><a href="#">Profile</a></li>
+                <li onclick="display('sectionabout')"><a href="#">About</a></li>
+                <li onclick="display('sectionskills')"><a href="#skills">Skills</a></li>
+                <li onclick="display('sectionprojects')"><a href="#projects">Projects</a></li>
+                <li onclick="display('sectioncourses')"><a href="#courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="sectionprofile" class="profile-container">
+        <div class="section-pic">
+            <img src="WhatsApp Image 2023-11-30 at 8.03.15 PM.jpeg" class="pro_im"/>
+        </div>
+        <div class="section-text">
+            <p class="section-textp">Hello I'm Jayasri Singamsetti<br></p>
+            <h1 class="title">Welcome to my portfolio!!</h1>
+            <p class="section_textp1">Shortly telling about me, Iam B.Tech 2nd year student, starve for opportunities to enhance my career..</p>
+            <div>
+                <div class="con">
+                    <button class="btn btn-primary" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="social-media">
+                    <img src="linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://linkedin.com/'">
+                    <img src="insta_logo.jfif" alt="My instagram profile" class="icon" onclick="location.href='https://instagram.com/'">
+                    <img src="github_logo.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionabout" class="about-container">
+        <div class="section-container">
+            <div class="section-pic-cont">
+                <img src="about.png" alt="profile" class="about-pic"/>
+            </div>
+            <div class="details-container">
+                <h2>Yes, It's me</h2>
+                <p>Highly reliable and determined university student positioned to make a significant contribution to the cybersecurity and any backend using python team. One year of leadership experience as CRC, where I oversee 60 students and followed their academics as well as extra-curricular activities. Meets challenges with enthusiasm, tact, and a strong work ethic.</p>
+                <button class="btn btn-secondary" onclick="display('sectionprofile')">Back to profile</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionskills" class="skills-container">
+        <div class="section-container">
+            <div class="details-container">
+                <h1>Programming skills I have till date</h1>
+                <p>C-Programming<br>Python-Programming<br>Java<br>html<br>css</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary" onclick="display('sectionabout')">Back</button>
+    </div>
+    <div id="sectionprojects" class="projects-container">
+        <div class="projects-bg-container">
+            <h1 class="projects-heading">Projects and Internships I did till date</h1>
+            <div class="projects-card-container d-flex flex-row">
+                <div>
+                    <h1 class="projects-card-heading">Yahtzee</h1>
+                    <p class="projects-card-description">
+                        It is a dice game based on poker.The object of the game is to roll certain combination of five dice to score desired score<br>In this Iam a part of team of 5 members and I have done most of the gui part and basic code.We did it using python.
+                    </p>
+                </div>
+                <img src="Yahtzee-1.jpeg" class="projects-card-image" />
+            </div>
+            <div class="projects-card-container d-flex flex-row">
+                <div>
+                    <h1 class="projects-card-heading">Codsoft-python</h1>
+                    <p class="projects-card-description">
+                        I would undoubtedly recommend this internship to work on some projects to show hands-on experience on an internship.And in this I have recently finished python programming on password-generator, rock-paper-scissor and basic-calculator.
+                    </p>
+                </div>
+                <img src="WhatsApp Image 2023-11-30 at 10.44.37 AM.jpeg" class="projects-card-image" />
+            </div>
+            <div class="projects-card-container d-flex flex-row">
+                <div>
+                    <h1 class="projects-card-heading">BharatIntern-webdevelopment</h1>
+                    <p class="projects-card-description">
+                        BharatIntern connects students with internships in variety of fieldas.This gives students oppurtinity to gain experience, skills and network.This is Iam currently working on and this portfolio is very productive to develop skills in html and css.
+                    </p>
+                </div>
+                <img src="WhatsApp Image 2023-11-30 at 10.50.39 AM.jpeg" class="projects-card-image" />
+            </div>
+        </div>
+        <button class="btn btn-secondary" onclick="display('sectionskills')">Back</button>
+    </div>
+    <div id="sectioncourses" class="course-container">
+        <div class="courses-bg-container">
+            <h1 class="courses-heading">Courses and competitive coding platforms I have participated till date</h1>
+            <div class="courses-card-container d-flex flex-row">
+                <div>
+                    <h1 class="courses-card-heading">IBM</h1>
+                    <p class="courses-card-description">
+                        With IBM SkillsBuild, you'll gain core technology and important workplace skills like: leadership skills, communication skills, programming skills, problem solving skills, and/or writing skills that are aligned to in-demand jobs. Plus, you can earn digital credentials to show employers what you've achieved.<br>In this I did cybersecurity fundamentals which was really productive and knowladgeble.
+                    </p>
+                </div>
+                <img src="WhatsApp Image 2023-11-30 at 11.11.58 AM.jpeg" class="courses-card-image" />
+            </div>
+            <div class="courses-card-container d-flex flex-row">
+                <div>
+                    <h1 class="courses-card-heading">Great-Learning</h1>
+                    <p class="courses-card-description">
+                        Great Learning teaches, is to illustrate illustrious virtue; to renovate the people; and to rest in the highest excellence. The point where to rest being known, the object of pursuit is then determined; and, that being determined, a calm unperturbedness may be attained to.<br>And in this I did Python for machine learning.
+                    </p>
+                </div>
+                <img src="WhatsApp Image 2023-11-30 at 11.12.13 AM.jpeg" class="courses-card-image" />
+            </div>
+            <div class="courses-card-container d-flex flex-row">
+                <div>
+                    <h1 class="courses-card-heading">Hackerrank-CodeChef-ProjectEuler-Interviewbit</h1>
+                    <p class="courses-card-description">
+                        In competitive coding platforms I have done many problems in codechef using java, I just solved few but useful problems in projecteuler and I have solved many useful problems in interviewbit using Java and hackerrank is my all time supporter I have gained silver badge in c gold badge in python and almost near to gold badge in java.
+                    </p>
+                </div>
+                <img src="WhatsApp Image 2023-11-30 at 11.23.02 AM.jpeg" class="courses-card-image" />
+            </div>
+        </div>
+        <button class="btn btn-secondary" onclick="display('sectionprojects')">Back</button>
+    </div>
+    <script>
+        function display(sectionId) {
+            var sections = document.querySelectorAll('.profile-container, .about-container, .skills-container, .projects-container,.courses-container');
+            sections.forEach(function (section) {
+            section.style.display = 'none';
+            });
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'flex'; // Display as flex to maintain the layout
+            }
+        }
+    </script>
+    
+</body>
+</html>
+*******CSS*********
+.list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-align: right;
+    color: black;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 5px;
+}
+.profile-container {
+    display: flex;
+    background-attachment: url("profile-bg.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("profile-bg.jfif.opdownload"); /* Replace with your image path */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+}
+
+.pro_im{
+    height: 50vh;
+    width: 100vh;
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+}
+section{
+    padding-top:4vh ;
+    height:96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.profile-container{
+    display: flex;
+}
+.section-pic{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin:auto 0;
+}
+.section-text{
+    align-self: center;
+    text-align: center;
+}
+.section_textp{
+    font-weight: 600;
+}
+.section_textp1{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap:1rem
+}
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+.con{
+    padding: 10px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-image: url("bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 100vh;
+}
+.about-container .section-pic-cont {
+    flex-shrink: 0;
+}
+.about-container .details-container {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border-color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+}
+
+.details-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details-container p {
+    font-size: 1rem;
+}
+.list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-align: right;
+    color: black;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-image: url("skills-bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.skills-container .section-container {
+    display: flex;
+    gap: 2rem; /* Adjust the gap as needed */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.skills-container .skills-pic {
+    flex-shrink: 0;
+    width: 300px; /* Adjust the width of the skills picture as needed */
+}
+
+.skills-container .details-container {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border-color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+}
+
+.details-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details-container p {
+    font-size: 1rem;
+}
+.projects-bg-container {
+    background-image: url("courses2-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 24px;
+}
+
+.projects-heading {
+    color:black;
+    font-size: 28px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.projects-card-container {
+    background-color:rgb(171, 137, 105);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    height:160px;
+}
+
+.projects-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 27px;
+    text-decoration: wavy;
+}
+
+.projects-card-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    color:rgb(53, 50, 50);
+}
+
+.projects-card-image {
+    width: 80px;
+    height: 100px;
+}
+
+.projects-card-text-container {
+    margin: 15px;
+}
+.courses-bg-container {
+    background-image: url("courses-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 24px;
+}
+
+.courses-heading {
+    color:purple;
+    font-size: 28px;
+    font-family: "Roboto";
+    font-weight: bold;
+    text-decoration: wavy;
+}
+
+.courses-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    height:160px;
+}
+
+.courses-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.courses-card-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #6c6b70;
+}
+
+.courses-card-image {
+    width: 80px;
+    height: 100px;
+}
+
+.projects-card-text-container {
+    margin: 15px;
+}
